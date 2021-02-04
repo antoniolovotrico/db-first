@@ -4,7 +4,7 @@ Strutturate il file come fatto oggi in classe.  Specificate: il nome del databas
 # database name : GameFlop
 # nome tabella : Games
 
-- id BIGINT PRIMARYKEY NOTNULL AUTO_INCREMENT
+- id BIGINT PRIMARYKEY NOTNULL AUTO_INCREMENT UNIQUE
 - isbn string VARCHAR(10) NOTNULL UNIQUE
 - title string VARCHAR(255) NOTNULL
 - author string VARCHAR(22) NULL
@@ -14,17 +14,8 @@ Strutturate il file come fatto oggi in classe.  Specificate: il nome del databas
 - cover binary data BLOB NULL
 - price int FLOAT(5,2)  NULL
 - game_house string VARCHAR(21) NULL
-
-
-
-- topic VARCHAR(30) NOTNULL
-- language string VARCHAR(20) NOTNULL
-- edition string VARCHAR(20) NULL
-
-- size string VARCHAR (25) NULL
-- editor string VARCHAR(25) NULL
-- cover_material string VARCHAR(25) NULL
-- created_at_date date DATETIME NOTNULL
-- edited_in date DATETIME NULL
+- language_supported string VARCHAR(250) NOTNULL
+- edition string VARCHAR(21) NULL
+- sound_decoding string VARCHAR (250) NULL
 - description string TEXT(65535) NULL
 - genre string VARCHAR(21) NOTNULL
